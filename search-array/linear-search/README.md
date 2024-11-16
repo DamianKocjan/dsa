@@ -7,6 +7,7 @@
 - Average Case: O(N)
 
 ## Pseudocode
+
 ```
 LinearSearch(A, key)
     for i = 0 to A.length - 1
