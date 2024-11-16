@@ -10,11 +10,11 @@ void swap(int &a, int &b) {
     b = temp;
 }
 
-void selectionSort(int arr[]) {
-    for (int i = 0; i < SIZE - 1; i++) {
+void selectionSort(int arr[], int size) {
+    for (int i = 0; i < size - 1; i++) {
         int minIndex = i;
 
-        for (int j = i + 1; j < SIZE; j++) {
+        for (int j = i + 1; j < size; j++) {
             if (arr[j] < arr[minIndex]) {
                 minIndex = j;
             }
@@ -53,7 +53,7 @@ int main() {
 
     printArray(arr, SIZE);
 
-    selectionSort(arr);
+    selectionSort(arr, SIZE);
 
     std::cout << "Sorted Array: " << std::endl;
 

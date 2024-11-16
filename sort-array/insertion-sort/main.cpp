@@ -4,8 +4,8 @@
 
 #define SIZE 100
 
-void insertionSort(int arr[]) {
-    for (int i = 1; i < SIZE; i++) {
+void insertionSort(int arr[], int size) {
+    for (int i = 1; i < size; i++) {
         int key = arr[i];
         int j = i - 1;
 
@@ -47,7 +47,7 @@ int main() {
 
     printArray(arr, SIZE);
 
-    insertionSort(arr);
+    insertionSort(arr, SIZE);
 
     std::cout << "Sorted Array: " << std::endl;
 

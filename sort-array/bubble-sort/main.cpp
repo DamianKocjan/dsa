@@ -10,9 +10,9 @@ void swap(int &a, int &b) {
     b = temp;
 }
 
-void bubbleSort(int arr[]) {
-    for (int i = 0; i < SIZE - 1; i++) {
-        for (int j = 0; j < SIZE - i - 1; j++) {
+void bubbleSort(int arr[], int size) {
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = 0; j < size - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
                 swap(arr[j], arr[j + 1]);
             }
@@ -49,7 +49,7 @@ int main() {
 
     printArray(arr, SIZE);
 
-    bubbleSort(arr);
+    bubbleSort(arr, SIZE);
 
     std::cout << "Sorted Array: " << std::endl;
 
