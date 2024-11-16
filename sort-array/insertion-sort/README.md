@@ -6,7 +6,7 @@
 - Average case: O(n^2) , If the list is randomly ordered
 - Worst case: O(n^2) , If the list is in reverse order
 
-## Space Complexity of Insertion Sort
+Space Complexity of Insertion Sort
 
 - Auxiliary Space: O(1), Insertion sort requires O(1) additional space, making it a space-efficient sorting algorithm.
 
